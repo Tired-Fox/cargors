@@ -18,6 +18,9 @@ lint:
 fix:
 	cargo clippy --fix
 
+ex:
+	cargo run --example $(EX) -- $(ARGS)
+
 test:
 	cargo test --all-features --color=auto -v
 
